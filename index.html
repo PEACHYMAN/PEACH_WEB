@@ -131,18 +131,17 @@
                 <h2 class="tm-text-primary tm-gallery-header">My Projects</h2> 
                 <div class="tm-gallery tm-mb-80">
                     <figure class="effect-goliath tm-gallery-item">
-                        <img src="img/gallery/rf_project.jpg" alt="Image"/>
-                        <figcaption>
-                            <h2>Rf-Servo motor Project</h2>
-                            <p>Click here to view</p>
-                            <a href="img/gallery/rf_project.jpg">View more</a>
-                        </figcaption>			
+                        <!-- Add class 'no-popup' to bypass the magnific popup -->
+                        <a href="project.html" class="no-popup">
+                            <img src="img/gallery/rf_project.jpg" alt="Image" />
+                            <figcaption>
+                                <h2>Rf-Servo motor Project</h2>
+                                <p>Click here to view</p>
+                            </figcaption>
+                        </a>			
                     </figure>                  
                 </div>
                 <div class="tm-paging tm-mb-130"></div>
-            </div>
-            <div class="tm-text-right">
-                <a href="#links" class="tm-btn tm-btn-next">Next page</a>
             </div>
         </div>
 
@@ -264,16 +263,7 @@
 
             setPagination(1);
             showItems(1);
-
-            /****************** Magnific Popup ***********/
-
-            $('.tm-gallery').magnificPopup({
-                delegate: 'a',
-                type: 'image',
-                gallery: {
-                    enabled: true
-                }
-            });
+       
         });
     </script>
 </body>
