@@ -12,9 +12,13 @@
             padding: 0;
             background-color: #adadad;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             margin-top: 50px;
+            flex: 1;
         }
         h1 {
             color: #222222;
@@ -34,6 +38,26 @@
         a:hover {
             background-color: #505050;
         }
+        .image-container {
+            text-align: center;
+        }
+        .centered-image {
+            margin: 10px;
+        }
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #686868;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-to-home:hover {
+            background-color: #505050;
+        }
     </style>
 </head>
 <body>
@@ -41,8 +65,8 @@
     <div class="container">
         <h1>RF-Servo Motor Project</h1>
         <img src="img/gallery/rf_project.jpg" height="420px" width="auto" class="centered-image">
-        <p>This is a little project I randomly decided to make, it involves connecting an Rf scanner to an Arduino to act as the Input. The Arduino then sends an output to a mini Servo motor and tells it to rotae 90 degrees. I set it up this way so as to act as a locking mechanism.</p>
-        <p>I plan to add a few things in the future one of those things being a screen to show when it is "locking" and "unlocking". I would also like to show named Ids for seperate Rf Ids used on the screen as an almost account style system it could be some fun </p>
+        <p>This is a little project I randomly decided to make, it involves connecting an Rf scanner to an Arduino to act as the Input. The Arduino then sends an output to a mini Servo motor and tells it to rotate 90 degrees. I set it up this way so as to act as a locking mechanism.</p>
+        <p>I plan to add a few things in the future, one of those being a screen to show when it is "locking" and "unlocking". I would also like to show named IDs for separate Rf IDs used on the screen as an almost account style system; it could be some fun.</p>
         <br>
         <div class="image-container">
             <img src="img/gallery/projects/RFID_CODE_1.jpg" height="auto" width="500px" class="centered-image">
@@ -50,10 +74,9 @@
         <div class="image-container">
             <img src="img/gallery/projects/RFID_CODE_2.jpg" height="auto" width="500px" class="centered-image">
         </div>
-        <p>Here is the coding that was used to make the system run I would like to put it out there that this code is made from a mixture of youtube videos and the use of ChatGpt.</p>
-        <a href="index.html">Go Back to Home</a>
+        <p>Here is the coding that was used to make the system run. I would like to put it out there that this code is made from a mixture of YouTube videos and the use of ChatGPT.</p>
     </div>
-    
+    <a href="index.html" class="back-to-home">Go Back to Home</a>
 
 </body>
 </html>
