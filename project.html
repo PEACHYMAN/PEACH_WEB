@@ -9,13 +9,15 @@
     <link rel="icon" href="img/gallery/peach_web.ico">
     <link rel="stylesheet" href="css/project.css">
 </head>
-<body>
 
-    <!-- Floating Logo with JavaScript Click Handling -->
+<body>
+    <!--Floating logo-->
     <a id="logo-link" href="index.html">
         <img src="img/gallery/peach_web.png" alt="Logo" class="floating-logo">
     </a>
 
+
+    <!--Text and Image content-->
     <div class="container">
         <h1>RF-Servo Motor Project</h1>
         <img src="img/gallery/rf_project.jpg" height="420px" width="auto" class="centered-image">
@@ -31,26 +33,8 @@
         <p>Here is the coding that was used to make the system run. I would like to put it out there that this code is made from a mixture of YouTube videos and the use of ChatGPT.</p>
     </div>
     <br><br><br>
+    <!--Floating back to home-->
     <a href="index.html" class="back-to-home">Go Back to Home</a>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const logoLink = document.getElementById('logo-link');
-            const probability = 0.2; // Probability of redirection (1 in 100)
-
-            logoLink.addEventListener('click', function(event) {
-                // Generate a random number between 0 and 1
-                const randomNumber = Math.random();
-
-                // Check if the random number is less than the probability
-                if (randomNumber < probability) {
-                    event.preventDefault(); // Prevent the default action of the link
-                    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Redirect to YouTube
-                }
-                // If the probability check fails, the default link action will occur
-            });
-        });
-    </script>
 
 </body>
 </html>
