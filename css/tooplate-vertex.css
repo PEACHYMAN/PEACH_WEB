@@ -672,3 +672,27 @@ figure.effect-goliath:hover p {
         height: 100px;
     }
 }
+
+.link-box {
+    background-color: #f9f9f900; /* Light background color */
+    border: 1px solid #ddd;    /* Border color */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 3px;             /* Padding inside the box */
+    margin-bottom: 20px;       /* Space between boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;        /* Center text */
+    display: inline-block;     /* Makes the box wrap tightly around its content */
+}
+
+.link-box a {
+    display: inline-block;     /* Make links behave like buttons */
+    padding: 8px 16px;         /* Padding inside the link */
+    background-color: #5a5a5a; /* Background color of the link */
+    color: white;              /* Text color */
+    text-decoration: none;     /* Remove underline */
+    border-radius: 5px;        /* Rounded corners of the link */
+}
+
+.link-box a:hover {
+    background-color: #000000; /* Darker background on hover */
+}
