@@ -6,7 +6,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
 header {
     background-color: #333;
     color: white;
@@ -17,38 +20,51 @@ header {
     left: 0;
     z-index: 1000;
 }
+
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;  /* Full width for responsiveness */
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .logo {
-    max-width: 150px;
+    max-width: 100%;
+    height: auto; /* Ensure the logo resizes responsively */
 }
 
 .container {
     margin-top: 80px; /* Adjusted for header height */
     flex: 1;
+    padding: 0 10px; /* Add slight padding for small screens */
     text-align: center;
+    max-width: 100%; /* Ensure container fills screen width */
 }
+
 h1 {
     color: #41830c;
 }
+
 p {
     color: #3a3a3a;
     text-align: left;
-    padding-left: 50px;
+    padding: 0 10px; /* Padding for text on smaller screens */
+    max-width: 100%;
 }
 
 .image-container {
     text-align: center;
+    max-width: 100%;
 }
+
 .centered-image {
-    margin: 10px;
+    margin: 10px 0;
+    max-width: 100%;  /* Ensure images resize on mobile */
+    height: auto;
 }
+
 .back-to-home {
     position: fixed;
     bottom: 20px;
@@ -60,14 +76,32 @@ p {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .back-to-home:hover {
     background-color: #505050;
 }
+
 .floating-logo {
     position: fixed;
     top: 10px;
     right: 10px;
-    max-width: 150px; /* Adjust size as needed */
+    max-width: 150px;
+    height: auto; /* Ensure it stays responsive */
     z-index: 1000;
+    cursor: pointer; /* Add a pointer cursor for interactivity */
 }
 
+@media (max-width: 768px) {
+    .floating-logo {
+        max-width: 100px; /* Adjust size for smaller screens */
+    }
+
+    .header-container {
+        padding: 0 10px;
+    }
+
+    .back-to-home {
+        bottom: 10px;
+        padding: 8px 16px;
+    }
+}
