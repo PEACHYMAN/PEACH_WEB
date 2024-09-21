@@ -42,7 +42,6 @@ body.closing .curtain {
     margin-right: auto; /* Center the container */
 }
 
-/* Additional styles for headers, images, and buttons */
 h1 {
     color: #41830c;
 }
@@ -113,4 +112,5 @@ p {
     width: 100%; /* Make the box take the full width of the container */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-bottom: 20px; /* Space below the text box */
+    box-sizing: border-box; /* Include padding and border in width */
 }
