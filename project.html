@@ -2,39 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> 
     <link rel="icon" href="img/gallery/peach_web.ico">
-    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/project.css"> <!-- Ensure this points to the correct CSS -->
 </head>
 
 <body>
-    <!--Floating logo-->
+    <div class="curtain"></div> <!-- Grey curtain div -->
+
+    <!-- Floating logo -->
     <a id="logo-link" href="index.html">
         <img src="img/gallery/peach_web.png" alt="Logo" class="floating-logo">
     </a>
 
-
-    <!--Text and Image content-->
     <div class="container">
         <h1>RF-Servo Motor Project</h1>
-        <img src="img/gallery/rf_project.jpg" height="420px" width="auto" class="centered-image">
-        <p>This is a little project I randomly decided to make, it involves connecting an Rf scanner to an Arduino to act as the Input. The Arduino then sends an output to a mini Servo motor and tells it to rotate 90 degrees. I set it up this way so as to act as a locking mechanism.</p>
-        <p>I plan to add a few things in the future, one of those being a screen to show when it is "locking" and "unlocking". I would also like to show named IDs for separate Rf IDs used on the screen as an almost account style system; it could be some fun.</p>
+        <img src="img/gallery/rf_project.jpg" class="centered-image" style="max-width: 500px;">
+        <div class="text-box">
+            <p>This is a little project I randomly decided to make, it involves connecting an Rf scanner to an Arduino to act as the Input. The Arduino then sends an output to a mini Servo motor and tells it to rotate 90 degrees. I set it up this way so as to act as a locking mechanism.</p>
+            <p>I plan to add a few things in the future, one of those being a screen to show when it is "locking" and "unlocking". I would also like to show named IDs for separate Rf IDs used on the screen as an almost account style system; it could be some fun.</p>
+        </div>
         <br>
         <div class="image-container">
-            <img src="img/gallery/projects/RFID_CODE_1.jpg" height="auto" width="500px" class="centered-image">
+            <img src="img/gallery/projects/RFID_CODE_1.jpg" class="centered-image" style="max-width: 500px;">
         </div>
         <div class="image-container">
-            <img src="img/gallery/projects/RFID_CODE_2.jpg" height="auto" width="500px" class="centered-image">
+            <img src="img/gallery/projects/RFID_CODE_2.jpg" class="centered-image" style="max-width: 500px;">
         </div>
         <p>Here is the coding that was used to make the system run. I would like to put it out there that this code is made from a mixture of YouTube videos and the use of ChatGPT.</p>
     </div>
-    <br><br><br>
-    <!--Floating back to home-->
+
+    <!-- Floating back to home -->
     <a href="index.html" class="back-to-home">Go Back to Home</a>
 
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.add('closing');
+            }, 1000); // Delay before closing animation
+        });
+    </script>
 </body>
 </html>
